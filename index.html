@@ -19,6 +19,11 @@
       padding: 10px;
       border: 1px solid #f0d8d8;
     }
+
+    #saved {
+      margin-top: 10px;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -26,9 +31,23 @@
 
 <h1>JavaScript Assignment</h1>
 
+<!-- FETCH API SECTION -->
 <h2>Fetch API Output (Users)</h2>
 <div id="output">Loading users...</div>
 
+<!-- LOCAL STORAGE SECTION -->
+<h2>Local Storage Form</h2>
+
+<form id="form">
+  <input type="text" id="name" placeholder="Enter Name" required>
+  <input type="email" id="email" placeholder="Enter Email" required>
+  <button type="submit">Save</button>
+</form>
+
+<p id="saved"></p>
+<button onclick="clearData()">Clear Data</button>
+
+<!-- INFO -->
 <h2>Console Output</h2>
 <p>Right click → Inspect → Console to see:</p>
 <ul>
@@ -37,10 +56,11 @@
   <li>Joke API result</li>
 </ul>
 
-<!-- Connect JavaScript files -->
+<!-- JS FILES -->
 <script src="promises.js"></script>
 <script src="async-await.js"></script>
 <script src="fetch-api.js"></script>
+<script src="local-storage.js"></script>
 
 </body>
 </html>
