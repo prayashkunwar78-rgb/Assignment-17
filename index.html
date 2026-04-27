@@ -31,11 +31,11 @@
 
 <h1>JavaScript Assignment</h1>
 
-<!-- FETCH API SECTION -->
+<!-- FETCH API -->
 <h2>Fetch API Output (Users)</h2>
 <div id="output">Loading users...</div>
 
-<!-- LOCAL STORAGE SECTION -->
+<!-- LOCAL STORAGE -->
 <h2>Local Storage Form</h2>
 
 <form id="form">
@@ -47,20 +47,29 @@
 <p id="saved"></p>
 <button onclick="clearData()">Clear Data</button>
 
+<!-- PROJECT OUTPUT -->
+<h2>Users (Project API)</h2>
+<div id="users"></div>
+<p id="selected"></p>
+
 <!-- INFO -->
 <h2>Console Output</h2>
-<p>Right click → Inspect → Console to see:</p>
 <ul>
   <li>Promises result</li>
   <li>Async/Await result</li>
   <li>Joke API result</li>
+  <li>Module output (main.js)</li>
 </ul>
 
-<!-- JS FILES -->
+<!-- NORMAL SCRIPTS -->
 <script src="promises.js"></script>
 <script src="async-await.js"></script>
 <script src="fetch-api.js"></script>
 <script src="local-storage.js"></script>
+<script src="project.js"></script>
+
+<!-- MODULE ENTRY (IMPORTANT FIX) -->
+<script type="module" src="modules/main.js"></script>
 
 </body>
 </html>
